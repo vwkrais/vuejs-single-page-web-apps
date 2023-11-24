@@ -1,0 +1,17 @@
+<section class="table-item">
+    <h2 class="table-item__hl">All Books</h2>
+    <table class="table-item__table">
+        <thead>
+            <tr>
+                <th class="table-item__table-head-name">Name</th>
+                <th class="table-item__table-head--isbn">ISBN</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr v-for="book in books" :key="book.isbn" class="table-item__table-row">
+                <td>{{ book.title }}</td>
+                <td>{{ book.isbn }}</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
