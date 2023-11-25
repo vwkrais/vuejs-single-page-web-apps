@@ -1,20 +1,23 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <p>Hallo Volker, <br />DU packst das!</p>
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <ListHeader />
+  <div id="app" class="inside">
+    <BookList />
+  </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import ListHeader from "./components/ListHeader.vue";
+import BookList from "@/components/BookList.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    ListHeader,
+    BookList,
   },
 };
 </script>
 
 <style>
-@import url("./assets/reset.css");
+@import url("./assets/global.css");
 </style>
